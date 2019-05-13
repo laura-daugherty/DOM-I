@@ -40,3 +40,41 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let navItems = document.querySelectorAll('nav > a');
+navItems[0].textContent = siteContent["nav"]["nav-item-1"]
+navItems[1].textContent = siteContent['nav']['nav-item-2'];
+navItems[2].textContent = siteContent['nav']['nav-item-3'];
+navItems[3].textContent = siteContent['nav']['nav-item-4'];
+navItems[4].textContent = siteContent['nav']['nav-item-5'];
+navItems.forEach(x => x.style.color = 'green')
+
+let ctaH = document.querySelector('.cta-text h1');
+ctaH.textContent = siteContent['cta']['h1'];
+
+let image1 = document.querySelector('#cta-img')
+image1.src = "img/header-img.png"
+
+let button = document.querySelector('.cta-text button');
+button.textContent = siteContent['cta']['button'];
+
+let topContentH4 = document.querySelectorAll('.main-content .top-content .text-content h4')
+topContentH4[0].textContent = siteContent['main-content']['features-h4'];
+topContentH4[1].textContent = siteContent['main-content']['about-h4'];
+
+let topContentP = document.querySelectorAll('.main-content .top-content p');
+topContentP[0].textContent = siteContent['main-content']['features-content']
+topContentP[1].textContent = siteContent['main-content']['about-content']
+
+let image2 = document.querySelector('#middle-img')
+image2.src = "img/mid-page-accent.jpg"
+
+let bottomContentH4 = document.querySelectorAll('.main-content .bottom-content h4')
+bottomContentH4[0].textContent = siteContent['main-content']['services-h4']
+bottomContentH4[1].textContent = siteContent['main-content']['product-h4']
+bottomContentH4[2].textContent = siteContent['main-content']['vision-h4']
+
+let bottomContentP = document.querySelectorAll('.main-content .bottom-content p')
+bottomContentP[0].textContent = siteContent['main-content']['services-content']
+bottomContentP[1].textContent = siteContent['main-content']['product-content']
+bottomContentP[2].textContent = siteContent['main-content']['vision-content']

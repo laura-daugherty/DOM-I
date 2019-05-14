@@ -78,3 +78,24 @@ let bottomContentP = document.querySelectorAll('.main-content .bottom-content p'
 bottomContentP[0].textContent = siteContent['main-content']['services-content']
 bottomContentP[1].textContent = siteContent['main-content']['product-content']
 bottomContentP[2].textContent = siteContent['main-content']['vision-content']
+
+// let newBit = document.createElement('a')
+// let navBar = document.querySelector('.main .nav')
+// navBar.prepend(newBit)
+// newBit.textContent = "new link"
+
+
+//create element
+const newElement = document.createElement('a')
+//Add value to the element
+newElement.textContent = "new link"
+newElement.href = "www.glossier.com"
+//decide where our new element is going
+const navBar = document.querySelector('header > nav')
+//prepend/appending new element to parent element
+navBar.prepend(newElement)
+
+const newElement2 = document.createElement('a')
+newElement2.style.backgroundColor = 'green'
+newElement2.textContent = "another link"
+navBar.appendChild(newElement2)
